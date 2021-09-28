@@ -1,11 +1,14 @@
 import Touchpad from './Touchpad'
 import Screen from './Screen'
 
-const Ipod = () => {
+const Ipod = (props) => {
+
     return (
         <div className="ipod">
             <Screen/>
-            <Touchpad/>
+            <Touchpad
+                onMenuSelection = {props.onMenuSelection}
+            />
         </div>
     );
   }
